@@ -35,7 +35,7 @@ if($sebagai == "administrator"){
 		$_SESSION['nama'] = $data['kasir_nama'];
 		$_SESSION['username'] = $data['kasir_username'];
 		$_SESSION['status'] = "kasir_logedin";
-		header("location:kasir/");
+		header("location:kasir/penjualan_tambah.php");
 	}else{
 		header("location:index.php?alert=gagal");
 	}

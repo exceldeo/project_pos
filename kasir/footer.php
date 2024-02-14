@@ -364,8 +364,6 @@
     // tombol tambahkan produk
     $("body").on("click", "#tombol-tambahkan", function() {
 
-
-
       var id = $("#tambahkan_id").val();
       var kode = $("#tambahkan_kode").val();
       var nama = $("#tambahkan_nama").val();

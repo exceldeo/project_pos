@@ -4,8 +4,7 @@
 
   <section class="content-header">
     <h1>
-      Penjualan
-      <small>Input Penjualan Baru</small>
+      Point Of Sale
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -15,11 +14,11 @@
 
   <section class="content">
 
-    <a href="penjualan.php" class="btn btn-sm btn-primary"><i class="fa fa-file"></i> &nbsp; DATA PENJUALAN</a>
-    <a href="penjualan_tambah.php" class="btn btn-sm btn-primary"> <i class="fa fa-plus"></i> &nbsp; INPUT PENJUALAN</a>
+    <!-- <a href="penjualan.php" class="btn btn-sm btn-primary"><i class="fa fa-file"></i> &nbsp; DATA PENJUALAN</a>
+    <a href="penjualan_tambah.php" class="btn btn-sm btn-primary"> <i class="fa fa-plus"></i> &nbsp; INPUT PENJUALAN</a> -->
 
-    <br>
-    <br>
+    <!-- <br>
+    <br> -->
 
     <div class="row">
       <section class="col-lg-12">       
@@ -114,7 +113,7 @@
                  <div class="form-group col-lg-7">
                   <label>Kode Produk</label>
                   <input type="hidden" class="form-control" id="tambahkan_id">
-                  <input type="text" class="form-control" id="tambahkan_kode" placeholder="Masukkan Kode Produk ..">
+                  <input type="text" class="form-control" id="tambahkan_kode" placeholder="Masukkan Kode Produk .." autocomplete="off">
                 </div>
 
                 <div class="col-lg-5">

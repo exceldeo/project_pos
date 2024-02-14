@@ -118,12 +118,6 @@
                 </a>
               </li>
 
-              <li>
-                <a href="gantipassword.php">
-                  <i class="fa fa-lock"></i> &nbsp; <span>GANTI PASSWORD</span>
-                </a>
-              </li>
-
             </ul>
 
 
@@ -145,6 +139,12 @@
                     <img src="../gambar/user/<?php echo $profil['user_foto'] ?>" class="user-image">
                   <?php } ?>
                   <span class="hidden-xs"><?php echo $_SESSION['nama']; ?> - PIMPINAN</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="gantipassword.php">
+                  <i class="fa fa-lock"></i> &nbsp; <span>GANTI PASSWORD</span>
                 </a>
               </li>
 

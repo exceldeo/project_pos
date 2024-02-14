@@ -84,6 +84,19 @@
                 </ul>
               </li>
 
+              <li>
+                <a href="penjualan.php">
+                  <i class="fa fa-list"></i> &nbsp; <span>PENJUALAN</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="laporan.php">
+                  <i class="fa fa-file"></i> &nbsp; <span>LAPORAN</span>
+                </a>
+              </li>
+
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-users"></i> &nbsp; PENGGUNA <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -99,31 +112,12 @@
                     </a>
                   </li>
 
-                  <li>
+                  <!-- <li>
                     <a href="pimpinan.php">
                       <i class="fa fa-user"></i> <span>PIMPINAN</span>
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
-              </li>
-
-              <li>
-                <a href="penjualan.php">
-                  <i class="fa fa-list"></i> &nbsp; <span>PENJUALAN</span>
-                </a>
-              </li>
-
-
-              <li>
-                <a href="laporan.php">
-                  <i class="fa fa-file"></i> &nbsp; <span>LAPORAN</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="gantipassword.php">
-                  <i class="fa fa-lock"></i> &nbsp; <span>GANTI PASSWORD</span>
-                </a>
               </li>
 
             </ul>
@@ -174,6 +168,12 @@
                     <img src="../gambar/user/<?php echo $profil['user_foto'] ?>" class="user-image">
                   <?php } ?>
                   <span class="hidden-xs"><?php echo $_SESSION['nama']; ?> - ADMINISTRATOR</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="gantipassword.php">
+                  <i class="fa fa-lock"></i> &nbsp; <span>GANTI PASSWORD</span>
                 </a>
               </li>
 

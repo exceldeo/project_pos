@@ -1,7 +1,6 @@
 <?php include 'header.php'; ?>
 
 <div class="content-wrapper">
-
   <section class="content-header">
     <h1>
       Penjualan
@@ -12,25 +11,18 @@
       <li class="active">Penjualan</li>
     </ol>
   </section>
-
   <section class="content">
-
-    <a href="penjualan.php" class="btn btn-sm btn-primary"><i class="fa fa-file"></i> &nbsp; DATA PENJUALAN</a>
+    <!-- <a href="penjualan.php" class="btn btn-sm btn-primary"><i class="fa fa-file"></i> &nbsp; DATA PENJUALAN</a>
     <a href="penjualan_tambah.php" class="btn btn-sm btn-primary"> <i class="fa fa-plus"></i> &nbsp; INPUT PENJUALAN</a>
-
     <br>
-    <br>
-
+    <br> -->
     <div class="row">
       <section class="col-lg-12">
         <div class="box box-info">
-
           <div class="box-header">
             <h3 class="box-title">Transaksi Penjualan Yang Saya Layani</h3>
           </div>
           <div class="box-body">
-
-
             <?php 
             if(isset($_GET['alert'])){
               if($_GET['alert'] == "sukses"){
@@ -40,11 +32,8 @@
               }elseif($_GET['alert'] == "update"){
                 echo "<div class='alert alert-success text-center'>Penjualan telah diupdate!</div>";
               }
-              
-
             }
             ?>
-
             <div class="table-responsive">
               <table class="table table-bordered table-striped" id="table-datatable">
                 <thead>
@@ -77,24 +66,16 @@
                       <td class="text-center"><?php echo $d['invoice_diskon']; ?>%</td>
                       <td class="text-center"><?php echo "Rp.".number_format($d['invoice_total']).",-"; ?></td>
                       <td class="text-center">    
-
                         <div class="btn-group">
-
-
                           <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#detail_pembelian_<?php echo $d['invoice_id'] ?>">
                             <i class="fa fa-search"></i>
                           </button>
-
                           <a target="_blank" href="penjualan_print.php?id=<?php echo $d['invoice_id']; ?>" class="btn btn-success btn-sm"><i class="fa fa-file"></i></a>
-                          
                           <a href="penjualan_edit.php?id=<?php echo $d['invoice_id']; ?>" class="btn btn-warning btn-sm"><i class="fa fa-cog"></i></a>
-
                           <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#hapus_penjualan_<?php echo $d['invoice_id'] ?>">
                             <i class="fa fa-trash"></i>
                           </button>
-
                         </div>
-
                         <div class="modal fade" id="detail_pembelian_<?php echo $d['invoice_id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -105,53 +86,39 @@
                                 <h4 class="modal-title" id="exampleModalLabel">Detail Penjualan</h4>
                               </div>
                               <div class="modal-body">
-
                                 <div class="row">
-
                                   <div class="col-lg-12">
                                    <label>Kasir yang melayani</label>
                                    <br>
                                    <?php echo $d['kasir_nama']; ?>
                                  </div>
-
                                  <br>
                                  <br>
                                  <br>
-
                                  <div class="col-lg-4">
-
                                   <div class="form-group">
                                     <label>No. Invoice</label>
                                     <br>
                                     <?php echo $d['invoice_nomor']; ?>
                                   </div>
-
                                 </div>
                                 <div class="col-lg-4">
-
                                   <div class="form-group">
                                     <label>Tanggal Invoice</label>
                                     <br>
                                     <?php echo date('d-m-Y', strtotime($d['invoice_tanggal'])); ?>
                                   </div>
-
                                 </div>
                                 <div class="col-lg-4">
-
                                   <div class="form-group">
                                     <label>Pelanggan</label>
                                     <br>
                                     <?php echo $d['invoice_pelanggan']; ?>
                                   </div>
-
                                 </div>
-
                               </div>
-
                               <hr>  
-
                               <b>Daftar Pembelian</b>
-
                               <table class="table table-bordered table-striped table-hover" id="table-pembelian">
                                 <thead>
                                   <tr>
@@ -184,8 +151,6 @@
                                   ?>
                                 </tbody>
                               </table>
-
-
                               <div class="row">
                                 <div class="col-lg-6">
                                   <table class="table table-bordered table-striped">
@@ -210,9 +175,6 @@
                                   </table>
                                 </div>
                               </div>
-
-
-
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
@@ -220,17 +182,6 @@
                           </div>
                         </div>
                       </div>
-
-
-
-
-
-
-
-
-
-
-
                       <!-- modal hapus -->
                       <div class="modal fade" id="hapus_penjualan_<?php echo $d['invoice_id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">

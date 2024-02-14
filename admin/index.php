@@ -67,14 +67,14 @@
               </div>
             </div>
 
-            <div class="col-lg-1 col-md-1 col-xs-3">
+            <!-- <div class="col-lg-1 col-md-1 col-xs-3">
               <div class="bg-primary text-center" style="padding: 13px 5px;">
                 <a href="pimpinan.php" style="color: white">
                   <h1 style="padding: 0;margin: 0"><i class="fa fa-user"></i></h1>
                   <h5 style="padding: 0;margin: 0">Pimpinan</h5>
                 </a>
               </div>
-            </div>
+            </div> -->
 
             <div class="col-lg-1 col-md-1 col-xs-3">
               <div class="bg-primary text-center" style="padding: 13px 5px;">
@@ -365,7 +365,7 @@
         </div>
       </div>
 
-      <div class="col-lg-2 col-xs-6">
+      <!-- <div class="col-lg-2 col-xs-6">
         <div class="small-box bg-green">
           <div class="inner">
             <?php 
@@ -379,7 +379,7 @@
             <i class="ion ion-stats-bars"></i>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-lg-2 col-xs-6">
         <div class="small-box bg-green">

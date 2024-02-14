@@ -33,7 +33,7 @@
                     <th>SATUAN</th>
                     <th>KATEGORI</th>
                     <th>STOK</th>
-                    <th>MODAL</th>
+                    <!-- <th>MODAL</th> -->
                     <th>JUAL</th>
                     <th>KETERANGAN</th>
                     <th width="5%">FOTO</th>
@@ -52,7 +52,7 @@
                       <td><?php echo $d['produk_satuan']; ?></td>
                       <td><?php echo $d['kategori']; ?></td>
                       <td><?php echo $d['produk_stok']; ?></td>
-                      <td><?php echo "Rp.".number_format($d['produk_harga_modal']).",-"; ?></td>
+                      <!-- <td><?php echo "Rp.".number_format($d['produk_harga_modal']).",-"; ?></td> -->
                       <td><?php echo "Rp.".number_format($d['produk_harga_jual']).",-"; ?></td>
                       <td><?php echo $d['produk_keterangan']; ?></td>
                       <td>

@@ -54,7 +54,7 @@
         <div class="container-fluid">
 
           <div class="navbar-header">
-            <a href="index.php" class="navbar-brand"><b>POS</b> | Point Of Sales</a>
+            <a href="penjualan_tambah.php" class="navbar-brand"><b>POS</b> | Point Of Sales</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
               <i class="fa fa-bars"></i>
             </button>
@@ -64,9 +64,15 @@
 
             <ul class="nav navbar-nav">
 
-              <li class="active">
+              <!-- <li class="active">
                 <a href="index.php">
                   <i class="fa fa-home"></i> &nbsp; <span>DASHBOARD</span> <span class="sr-only">(current)</span>
+                </a>
+              </li> -->
+
+              <li>
+                <a href="penjualan_tambah.php">
+                  <i class="fa fa-shopping-cart"></i> &nbsp; <span> KASIR</span>
                 </a>
               </li>
 
@@ -76,7 +82,13 @@
                 </a>
               </li>
 
-              <li class="dropdown">
+              <li>
+                <a href="penjualan.php">
+                  <i class="fa fa-file-text"></i> &nbsp; <span> DATA PENJUALAN</span>
+                </a>
+              </li>
+
+              <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-shopping-cart"></i> &nbsp; TRANSAKSI PENJUALAN <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li>
@@ -91,20 +103,16 @@
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
 
-
+<!-- 
               <li>
                 <a href="laporan.php">
                   <i class="fa fa-file"></i> &nbsp; <span>LAPORAN</span>
                 </a>
-              </li>
+              </li> -->
 
-              <li>
-                <a href="gantipassword.php">
-                  <i class="fa fa-lock"></i> &nbsp; <span>GANTI PASSWORD</span>
-                </a>
-              </li>
+
 
             </ul>
 
@@ -154,6 +162,11 @@
                     <img src="../gambar/kasir/<?php echo $profil['kasir_foto'] ?>" class="user-image">
                   <?php } ?>
                   <span class="hidden-xs"><?php echo $_SESSION['nama']; ?> - KASIR</span>
+                </a>
+              </li>
+              <li>
+                <a href="gantipassword.php">
+                  <i class="fa fa-lock"></i> &nbsp; <span>GANTI PASSWORD</span>
                 </a>
               </li>
 

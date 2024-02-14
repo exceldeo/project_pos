@@ -40,7 +40,43 @@ for($a=0;$a<$jumlah_pembelian;$a++){
 	mysqli_query($koneksi, "insert into transaksi values(NULL,'$id_invoice','$t_produk','$t_harga','$t_jumlah','$t_total')")or die(mysqli_errno($koneksi));
 
 }
+header("location:penjualan_print.php?id=".$id_invoice."&redirect=true");
 
 // i want to redirect to penjualan_tambah.php and open penjualan_print.php?id=<?php echo $d['invoice_id']; in new tab in php way
+?>
+<!-- <html>
+<head>
+	  	<link rel="stylesheet" href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../assets/bower_components/Ionicons/css/ionicons.min.css">
+		<link rel="stylesheet" href="../assets/dist/css/AdminLTE.min.css">
+		<link rel="stylesheet" href="../assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/dist/css/skins/_all-skins.min.css">
+		<link rel="stylesheet" href="../assets/bower_components/morris.js/morris.css">
+		<link rel="stylesheet" href="../assets/bower_components/jvectormap/jquery-jvectormap.css">
+		<link rel="stylesheet" href="../assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" href="../assets/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+		<link rel="stylesheet" href="../assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	<title></title>
+</head>
+<body >
+	<div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<div class="row">
+			<div class="col-lg-12">
+				<img src="../gambar/sistem/check.png" class="img img-responsive" style="width: 150px; margin: 0 auto;">
+				<h2 class="text-center">
+					Transaksi berhasil dibuat
+				</h2>
 
-header("location:penjualan_tambah.php?alert=sukses");
+			</div>
+			<div class="col-lg-12 text-center" style="margin-top: 20px;">
+				<a href="penjualan_tambah.php" class="btn btn-lg btn-secondary" style="margin-right: 50px;">Kembali</a>
+				<a href="penjualan_print.php?id=<?php echo $id_invoice; ?>" class="btn btn-lg btn-primary" target="_blank">Print Nota</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html> -->
+
+

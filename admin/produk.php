@@ -19,7 +19,7 @@
         <div class="box box-info">
 
           <div class="box-header">
-            <h3 class="box-title">Produk</h3>
+            <button class="btn btn-success btn-sm" id="export_product_csv"><i class="fa fa-file"></i>&nbsp Export CSV</button>              
             <a href="produk_tambah.php" class="btn btn-primary btn-sm pull-right"><i class="fa fa-plus"></i> &nbsp Tambah Produk Baru</a>              
           </div>
           

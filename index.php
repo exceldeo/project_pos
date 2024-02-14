@@ -18,8 +18,8 @@
 
       <center>
 
-        <h2 style="margin: 0"><b>POS</b> (<b>P</b>oint <b>O</b>f <b>S</b>ales)</h2>
-        <h3>TOKO MODERN</h3>
+        <h2 style="margin: 0"><b>POS</b> <br>(Point Of Sales)</h2>
+        <!-- <h3>TOKO MODERN</h3> -->
 
         <br/>
 
@@ -39,7 +39,7 @@
       <div class="login-box-body">
 
        <center>
-        <img src="gambar/sistem/logo.png" style="width: 170px">
+        <img src="./assets/logo.jpeg" style="width: 170px">
       </center>
       <p class="login-box-msg text-bold">LOGIN</p>
 
@@ -61,10 +61,9 @@
             <option value="">- Pilih</option>
             <option value="administrator">Administrator</option>
             <option value="kasir">Kasir</option>
-            <option value="pimpinan">Pimpinan</option>
+            <!-- <option value="pimpinan">Pimpinan</option> -->
           </select>
 
-          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
 
         <div class="row">
