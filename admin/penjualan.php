@@ -67,10 +67,10 @@
                             <i class="fa fa-search"></i>
                           </button>
                           <a target="_blank" href="penjualan_print.php?id=<?php echo $d['invoice_id']; ?>" class="btn btn-success btn-sm"><i class="fa fa-file"></i></a>
-                          <a href="penjualan_edit.php?id=<?php echo $d['invoice_id']; ?>" class="btn btn-warning btn-sm"><i class="fa fa-cog"></i></a>
+                          <!-- <a href="penjualan_edit.php?id=<?php echo $d['invoice_id']; ?>" class="btn btn-warning btn-sm"><i class="fa fa-cog"></i></a>
                           <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#hapus_penjualan_<?php echo $d['invoice_id'] ?>">
                             <i class="fa fa-trash"></i>
-                          </button>
+                          </button> -->
                         </div>
                         <div class="modal fade" id="detail_pembelian_<?php echo $d['invoice_id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
